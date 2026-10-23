@@ -1,0 +1,28 @@
+/* Mengatur scroll yang lebih halus saat menu ditekan */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* Memberi jarak agar konten tidak tertutup navbar fixed-top */
+}
+
+/* Kustomisasi Banner/Header dengan Gambar Background */
+.banner-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    height: 90vh; /* Mengambil 90% tinggi layar */
+    min-height: 500px;
+}
+
+/* Animasi Hover (Sentuhan Tambahan untuk Nilai Plus) */
+.edu-card, .exp-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover, .exp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.15)!important;
+    cursor: default;
+}
